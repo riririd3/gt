@@ -4,6 +4,29 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1">
 <div class="spoiler">
+#expander {
+	display: none;
+}
+
+.spoiler .expander:before {
+  content: '[show]'
+}
+
+.spoiler #expand {
+  display: none;
+}
+
+.spoiler #expand:checked + .expander:before {
+  content: '[hide]';
+}
+
+.spoiler #expand:checked ~ .spoiler-content {
+	display: block;
+}
+
+.spoiler .spoiler-content {
+	display: none;
+}
 	<input type="checkbox" id="expand" name="expand" />
 	<label class="expander" for="expand"></label>
 	<div class="spoiler-content"><img src="vinette.jpg" /></div>
