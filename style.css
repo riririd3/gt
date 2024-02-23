@@ -3,7 +3,7 @@
 }
 
 .spoiler .expander:before {
-  content: '[show]'
+  content: '[show spoiler]'
 }
 
 .spoiler #expand {
@@ -11,7 +11,7 @@
 }
 
 .spoiler #expand:checked + .expander:before {
-  content: '[hide]';
+  content: '[hide spoiler]';
 }
 
 .spoiler #expand:checked ~ .spoiler-content {
