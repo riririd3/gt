@@ -3,34 +3,10 @@
 <head>
 <meta name="viewport"
 content="width=device-width, initial-scale=1">
-<style>
-#expander {
-	display: none;
-}
-
-.spoiler .expander:before {
-  content: '[show]'
-}
-
-.spoiler #expand {
-  display: none;
-}
-
-.spoiler #expand:checked + .expander:before {
-  content: '[hide]';
-}
-
-.spoiler #expand:checked ~ .spoiler-content {
-	display: block;
-}
-
-.spoiler .spoiler-content {
-	display: none;
-}
-</style>	
-	<div class="spoiler">
-	<input type="checkbox" id="expand" name="expand" />
-	<label class="expander" for="expand"></label>
-	<div class="spoiler-content"><img src="vinette.jpg" /></div>
+<link rel="stylesheet" href="style.css">
+<div class="spoiler">
+<input type="checkbox" id="expand" name="expand" />
+<label class="expander" for="expand"></label>
+<div class="spoiler-content"><img src="vinette.jpg" /></div>
 </div>
 </html>
